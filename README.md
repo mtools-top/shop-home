@@ -1,6 +1,6 @@
 # shop_home
 
-> A Vue.js project
+> 商品后台管理操作界面
 
 ## Build Setup
 
