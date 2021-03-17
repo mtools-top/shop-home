@@ -9,14 +9,14 @@ const vm = new vue;
 import router from "../router";
 // 响应拦截
 axios.interceptors.response.use(res => {
-    console.log('==响应拦截==');
+    console.log('oo响应拦截oo');
     console.log('响应来自:' + res.config.url);
     console.log(res);
-    if (res.data.code !== 200) {
+    if (res.data.msg == "请设置请求头,并携带验证字符串") {
         vm.$message.error(res.data.msg)
         router.push('/login')
     }
-    console.log('==拦截结束==');
+    console.log('xx拦截结束xx');
     console.log('');
     return res
 });
@@ -266,7 +266,7 @@ export const cateList = () => {
     return axios({
         method: 'get',
         url: BASE_URL + '/api/catelist',
-        params:{istree:true}
+        params: { istree: true }
     })
 };
 /**
@@ -296,7 +296,7 @@ export const modifyCate = (data) => {
     return axios({
         method: 'post',
         url: BASE_URL + '/api/cateedit',
-        data:form
+        data: form
     })
 };
 /**
@@ -348,11 +348,11 @@ export const specsCount = (data) => {
  * size查询条数
  * page页码数
  */
-export const specsList = (data) => {
+export const specsList = (params) => {
     return axios({
         method: 'get',
         url: BASE_URL + '/api/specslist',
-        data
+        params
     })
 };
 /**

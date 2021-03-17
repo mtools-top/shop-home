@@ -57,12 +57,8 @@ export default {
           duration: 1000,
           message: "删除商品规格操作成功"
         });
-        this.acSpecsList();
       });
     },
-    ...mapActions({
-      acSpecsList: "specs/acSpecsList"
-    })
   },
   mounted() {},
   components: {
