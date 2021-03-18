@@ -91,7 +91,7 @@ export default {
       if (!this.testDialog()) {
         this.$message.error("请检查输入内容");
         return;
-      };
+      }
       // 判断手机号
       if (this.memberList.some(i => i.phone == this.form.phone)) {
         this.$message.error("手机号重以重复");
