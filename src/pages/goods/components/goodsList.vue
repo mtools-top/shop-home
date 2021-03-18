@@ -9,8 +9,16 @@
     >
       <el-table-column prop="id" label="商品编号"> </el-table-column>
       <el-table-column prop="goodsname" label="商品名称"> </el-table-column>
-      <el-table-column prop="price" label="商品价格"> </el-table-column>
-      <el-table-column prop="market_price" label="市场价格"> </el-table-column>
+      <el-table-column prop="price" label="商品价格">
+        <template v-slot="prop">
+          {{ prop.row.price | toFixed }}
+        </template>
+      </el-table-column>
+      <el-table-column prop="market_price" label="市场价格">
+        <template v-slot="prop">
+          {{ prop.row.market_price | toFixed }}
+        </template>
+      </el-table-column>
       <el-table-column prop="img" label="图片">
         <template v-slot="prop">
           <img :src="$localhost + prop.row.img" />

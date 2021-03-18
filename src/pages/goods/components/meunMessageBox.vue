@@ -157,8 +157,8 @@ export default {
         first_cateid: "",
         second_cateid: "",
         goodsname: "",
-        price: null,
-        market_price: null,
+        price: "",
+        market_price: "",
         img: null,
         description: "",
         specsid: "",
@@ -245,11 +245,10 @@ export default {
       this.form.img = file.raw;
     },
     addGoodsBtn() {
-      this.form.description = this.editor.txt.html();
-      this.form.specsattr = JSON.stringify(this.specsattrArr);
-      console.log(this.form);
-      if (!this.form.goodsname) {
-        this.$message.error("请输入商品名称");
+      // console.log(this.form);
+      // 调用验证方法,如有未填写内容不予通过
+      if (!this.testDialog()) {
+        this.$message.error("请输入完整信息");
         return;
       }
       addGoods(this.form).then(res => {
@@ -272,18 +271,16 @@ export default {
     },
     // 编辑按钮
     modifyGoodsBtn() {
-      if (!this.form.goodsname) {
-        this.$message.error("请输入商品名称");
+      if (!this.testDialog()) {
+        this.$message.error("请输入完整信息");
         return;
-      }
-      // 将规格数组转为字符串
-      this.form.specsattr = JSON.stringify(this.specsattrArr);
+      };
       // console.log(this.form);
       modifyGoods(this.form).then(res => {
         this.$message({
           type: "success",
           duration: 1000,
-          message: "添加操作成功"
+          message: "编辑操作成功"
         });
         this.cancel();
         this.acGoodsList();
@@ -307,6 +304,31 @@ export default {
       };
       this.imageUrl = "";
       this.specsattrArr = [];
+    },
+    // 验证表单所有信息是否已经更改
+    testDialog() {
+      // 富文本内容赋值
+      this.form.description = this.editor.txt.html();
+      // 商品属性数组转换字符串赋值
+      this.form.specsattr = JSON.stringify(this.specsattrArr);
+      const A = {
+        first_cateid: "",
+        second_cateid: "",
+        goodsname: "",
+        price: "",
+        market_price: "",
+        img: null,
+        description: "",
+        specsid: "",
+        specsattr: ""
+      };
+      const B = this.form;
+      for (const k in A) {
+        if (A[k] == B[k]) {
+          return false;
+        }
+      }
+      return true;
     },
 
     ...mapActions({

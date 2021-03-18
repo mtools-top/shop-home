@@ -27,3 +27,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 2021-3-18
 
 下次需要做的是:添加商品价格过滤器,添加表格判断输入价格是否为数字.并全部判断是否有添加内容
+
+2021-3-18
+
+上面内容已完成,接下来是开始=>[会员管理]
