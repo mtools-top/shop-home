@@ -512,3 +512,62 @@ export const delGoods = (data) => {
     })
 };
 
+// ======================会员管理=========================
+/**
+ * @register
+ * 商品分类添加
+ * POST:/api/register
+ * phone手机号
+ * nickname昵称
+ * password密码
+ */
+ export const register = (data) => {
+    return axios({
+        method: 'post',
+        url: BASE_URL + '/api/register',
+        data
+    })
+};
+/**
+ * @memberList
+ * 会员列表
+ * get:/api/memberlist
+ * size查询条数
+ * page页码数
+ */
+export const memberList = (params) => {
+    return axios({
+        method: 'get',
+        url: BASE_URL + '/api/memberlist',
+        params
+    })
+};
+/**
+ * @editMember
+ * 会员获取（一条）
+ * get:/api/memberinfo
+ * uid用户编号，必填项
+ */
+export const editMember = (params) => {
+    return axios({
+        method: 'get',
+        url: BASE_URL + '/api/memberinfo',
+        params
+    })
+};
+/**
+ * @modifyMember
+ * 会员修改
+ * uid会员编号，必填项
+ * nickname昵称
+ * phone手机号
+ * password密码
+ * status状态1正常2禁用
+ */
+export const modifyMember = (data) => {
+    return axios({
+        method: 'post',
+        url: BASE_URL + '/api/memberedit',
+        data
+    })
+};

@@ -1,5 +1,5 @@
 <template>
-  <div id="manager-list">
+  <div id="specs-list">
     <el-table
       :data="specsList"
       style="width: 100%;margin-bottom: 20px;"
