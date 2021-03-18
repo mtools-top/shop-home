@@ -12,7 +12,7 @@ axios.interceptors.response.use(res => {
     console.log('oo响应拦截oo');
     console.log('响应来自:' + res.config.url);
     console.log(res);
-    if (res.data.msg == "请设置请求头,并携带验证字符串") {
+    if (res.data.msg == "请设置请求头,并携带验证字符串" || res.data.code == 403) {
         vm.$message.error(res.data.msg)
         router.push('/login')
     }
@@ -330,7 +330,7 @@ export const addSpecs = (data) => {
     })
 };
 /**
- * @specesCount
+ * @specsCount
  * 商品规格总数（用于计算分页）
  * get:/api/specscount
  */
@@ -396,3 +396,119 @@ export const delSpecs = (data) => {
         data
     })
 };
+
+
+
+
+// ======================商品管理=========================
+/**
+ * @addGoods
+ * 商品添加
+ * POST:/api/goodsadd
+ * first_cateid一级分类编号
+ * second_cateid二级分类编号
+ * goodsname商品名称
+ * price商品价格
+ * market_price市场价格
+ * img商品图片（文件）
+ * description商品描述
+ * specsid商品规格编号
+ * specsattr商品规格属性
+ * isnew是否新品     1-是 2-否
+ * ishot是否热卖推荐 1-是 2-否
+ * status状态1正常2禁用
+ */
+export const addGoods = (data) => {
+    let form = new FormData()
+    for (const i in data) {
+        form.append(i, data[i])
+    };
+    return axios({
+        method: 'post',
+        url: BASE_URL + '/api/goodsadd',
+        data: form
+    })
+};
+
+/**
+ * @goodsCount
+ * 商品总数（用于计算分页）
+ * get:/api/goodscount
+ */
+export const goodsCount = (data) => {
+    return axios({
+        method: 'get',
+        url: BASE_URL + '/api/goodscount',
+        data
+    })
+};
+/**
+ * @goodsList
+ * 商品列表(分页)
+ * get:/api/goodslist
+ * size查询条数 page页码数
+ * fid一级分类id sid二级分类id
+ */
+export const goodsList = (params) => {
+    return axios({
+        method: 'get',
+        url: BASE_URL + '/api/goodslist',
+        params
+    })
+};
+/**
+ * @editGoods
+ * 商品获取（一条）
+ * get:/api/goodsinfo
+ * id规格编号
+ */
+export const editGoods = (params) => {
+    return axios({
+        method: 'get',
+        url: BASE_URL + '/api/goodsinfo',
+        params
+    })
+};
+/**
+ * @modifyGoods
+ * 商品规格修改
+ * post:/api/goodsedit
+ * id分类编号，必填项
+ * first_cateid一级分类编号
+ * second_cateid二级分类编号
+ * goodsname商品名称
+ * price商品价格
+ * market_price市场价格
+ * img商品图片（文件）
+ * description商品描述
+ * sepcsid商品规格编号
+ * sepcsattr商品规格属性
+ * isnew是否新品
+ * ishot是否热卖推荐
+ * status状态1正常2禁用
+ */
+export const modifyGoods = (data) => {
+    let form = new FormData()
+    for (const i in data) {
+        form.append(i, data[i])
+    };
+    return axios({
+        method: 'post',
+        url: BASE_URL + '/api/goodsedit',
+        data:form
+    })
+};
+/**
+ * @delGoods
+ * 商品删除
+ * post:/api/goodsdelete
+ * id规格编号
+ */
+export const delGoods = (data) => {
+    return axios({
+        method: 'post',
+        url: BASE_URL + '/api/goodsdelete',
+        data
+    })
+};
+

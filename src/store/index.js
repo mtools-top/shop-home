@@ -15,6 +15,7 @@ import role from './modules/role';
 import manager from './modules/manager';
 import cate from './modules/cate';
 import specs from './modules/specs';
+import goods from './modules/goods';
 export default new Vuex.Store({
     state,
     mutations,
@@ -25,6 +26,7 @@ export default new Vuex.Store({
         role,
         manager,
         cate,
-        specs
+        specs,
+        goods
     }
 })

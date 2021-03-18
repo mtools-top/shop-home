@@ -23,12 +23,15 @@ const actions = {
             context.commit('muSpecsCount', res.data.list[0].total)
         })
     },
-    acSpecsList(context) {
+    acSpecsList(context, isAll = false) {
         let params = {
             page: context.state.page,
             size: context.state.size
         };
-
+        // 是否获取全部信息
+        if (isAll) {
+            params.size = null;
+        }
         specsList(params).then(res => {
             let specsList = res.data.list;
             if ((!specsList || specsList.length == 0) && params.page > 1) {

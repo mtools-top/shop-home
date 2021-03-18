@@ -32,7 +32,7 @@
         <el-form-item label="图片" :label-width="formLabelWidth">
           <el-upload
             class="avatar-uploader"
-            action=""
+            action="#"
             :show-file-list="false"
             :on-change="uploadImg"
           >
