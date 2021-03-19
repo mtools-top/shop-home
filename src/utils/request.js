@@ -648,3 +648,80 @@ export const delBanner = (data) => {
         data
     })
 };
+// ======================秒杀活动管理=========================
+/**
+ * @addSeckill
+ * 限时秒杀添加
+ * POST:/api/seckadd
+ * title限时秒杀名称
+ * begintime开始时间
+ * endtime结束时间
+ * first_cateid商品一级分类编号
+ * second_cateid商品二级分类编号
+ * goodsid商品编号
+ * status状态   1正常2禁用
+ */
+ export const addSeckill = (data) => {
+    return axios({
+        method: 'post',
+        url: BASE_URL + '/api/seckadd',
+        data
+    })
+};
+/**
+ * @seckillList
+ * 限时秒杀列表
+ * GET:/api/secklist
+ */
+export const seckillList = () => {
+    return axios({
+        method: 'get',
+        url: BASE_URL + '/api/secklist',
+    })
+};
+/**
+ * @editSeckill
+ * 限时秒杀获取（一条）
+ * GET:/api/seckinfo
+ * id秒杀活动编号
+ */
+export const editSeckill = (params) => {
+    return axios({
+        method: 'get',
+        url: BASE_URL + '/api/seckinfo',
+        params
+    })
+};
+/**
+ * @modifySeckill
+ * 限时秒杀修改
+ * POST:/api/seckedit
+ * id编号，必填项
+ * title限时秒杀名称
+ * begintime开始时间
+ * endtime结束时间
+ * first_cateid商品一级分类编号
+ * second_cateid商品二级分类编号
+ * goodsid商品编号
+ * status状态1正常2禁用
+ */
+export const modifySeckill = (data) => {
+    return axios({
+        method: 'post',
+        url: BASE_URL + '/api/seckedit',
+        data
+    })
+};
+/**
+ * @delSeckill
+ * 限时秒杀删除
+ * POST:/api/seckdelete
+ * id编号，必填项
+ */
+export const delSeckill = (data) => {
+    return axios({
+        method: 'post',
+        url: BASE_URL + '/api/seckdelete',
+        data
+    })
+};

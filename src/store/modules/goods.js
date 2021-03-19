@@ -23,15 +23,26 @@ const actions = {
             context.commit('muGoodsCount', res.data.list[0].total)
         })
     },
-    acGoodsList(context, isAll = false) {
+    acGoodsList(context, changeData = {}) {
+        // 接收参数合并
+        let defualt = {
+            isAll: false,
+            isCate: null
+        };
+        let result =Object.assign(defualt,changeData);
+        console.log('测试打印',result);
         let params = {
             page: context.state.page,
             size: context.state.size
         };
         // 是否获取全部信息
-        if (isAll) {
+        if (result.isAll) {
             params.size = null;
-        }
+        };
+        // 是否根据商品分类获取全部信息
+        if (result.isCate) {
+            params = result.isCate
+        };
         goodsList(params).then(res => {
             let goodsList = res.data.list;
             if ((!goodsList || goodsList.length == 0) && params.page > 1) {
@@ -41,6 +52,7 @@ const actions = {
             };
             if (!goodsList || goodsList.length == 0) {
                 context.commit('muGoodsList', []);
+                return
             }
             context.commit('muGoodsList', goodsList)
         })

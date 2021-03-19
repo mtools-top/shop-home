@@ -39,3 +39,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 2021-3-18
 
 上面内容已完成,接下来是开始=>[秒杀活动管理]
+
+2021-3-18
+
+1. 增加了商品列表可以通过分类来获取
+2. 表单change事件有问题,已经解决,是因为方法写到外面去了
+3. ![](image/README/1616151796919.png)

@@ -13,6 +13,7 @@ const specs = ()=>import('../pages/specs/specs');
 const goods = ()=>import('../pages/goods/goods');
 const member = ()=>import('../pages/member/member');
 const banner = ()=>import('../pages/banner/banner');
+const seckill = ()=>import('../pages/seckill/seckill');
 const router = new Router({
   routes: [
     {
@@ -62,6 +63,11 @@ const router = new Router({
           path:'banner',
           component:banner,
           name:'轮播图管理'
+        },
+        {
+          path:'seckill',
+          component:seckill,
+          name:'秒杀活动'
         },
         {
           path:'/',

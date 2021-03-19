@@ -174,7 +174,7 @@ export default {
   },
   props: ["info"],
   computed: {
-    // 分类
+    // 商品二级分类
     cateListChidren() {
       if (this.form.first_cateid) {
         let nowChidren;
