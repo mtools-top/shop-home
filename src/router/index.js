@@ -12,6 +12,7 @@ const cate = ()=>import('../pages/cate/cate');
 const specs = ()=>import('../pages/specs/specs');
 const goods = ()=>import('../pages/goods/goods');
 const member = ()=>import('../pages/member/member');
+const banner = ()=>import('../pages/banner/banner');
 const router = new Router({
   routes: [
     {
@@ -56,6 +57,11 @@ const router = new Router({
           path:'member',
           component:member,
           name:'会员管理'
+        },
+        {
+          path:'banner',
+          component:banner,
+          name:'轮播图管理'
         },
         {
           path:'/',

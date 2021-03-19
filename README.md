@@ -35,3 +35,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 2021-3-18
 
 上面内容已完成,接下来是开始=>[轮播图管理]
+
+2021-3-18
+
+上面内容已完成,接下来是开始=>[秒杀活动管理]

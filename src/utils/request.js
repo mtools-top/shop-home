@@ -571,3 +571,80 @@ export const modifyMember = (data) => {
         data
     })
 };
+// ======================轮播图管理=========================
+/**
+ * @addBanner
+ * 轮播图添加
+ * POST:/api/banneradd
+ * title轮播图名称
+ * img图片(文件)
+ * status状态  1正常2禁用
+ */
+ export const addBanner = (data) => {
+    let form = new FormData();
+    for (const i in data) {
+        form.append(i, data[i])
+    };
+    return axios({
+        method: 'post',
+        url: BASE_URL + '/api/banneradd',
+        data: form
+    })
+};
+/**
+ * @bannerList
+ * 商品分类列表
+ * GET:/api/bannerlist
+ */
+export const bannerList = () => {
+    return axios({
+        method: 'get',
+        url: BASE_URL + '/api/bannerlist',
+    })
+};
+/**
+ * @editBanner
+ * 商品分类获取（一条）
+ * GET:/api/bannerinfo
+ * id轮播图编号
+ */
+export const editBanner = (params) => {
+    return axios({
+        method: 'get',
+        url: BASE_URL + '/api/bannerinfo',
+        params
+    })
+};
+/**
+ * @modifyBanner
+ * 商品分类修改
+ * POST:/api/banneredit
+ * id分类编号，必填项
+ * title轮播图名称
+ * img图片(文件)
+ * status状态1正常2禁用
+ */
+export const modifyBanner = (data) => {
+    let form = new FormData();
+    for (const i in data) {
+        form.append(i, data[i])
+    };
+    return axios({
+        method: 'post',
+        url: BASE_URL + '/api/banneredit',
+        data: form
+    })
+};
+/**
+ * @delBanner
+ * 商品分类删除
+ * POST:/api/bannerdelete
+ * id分类编号
+ */
+export const delBanner = (data) => {
+    return axios({
+        method: 'post',
+        url: BASE_URL + '/api/bannerdelete',
+        data
+    })
+};
