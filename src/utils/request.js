@@ -1,6 +1,6 @@
 import axios from 'axios';
 import qs from 'qs';
-// 用于获取vuex中存储的session
+// 用于获取vuex中存储的session.我还是采取的通过本地读取
 import store from '../store';
 // 获取vue实例
 import vue from 'vue';
