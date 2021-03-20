@@ -195,52 +195,52 @@ Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 �
 
 
 
-<img src="C:\Users\13540\AppData\Roaming\Typora\typora-user-images\image-20210320100739299.png" alt="image-20210320100739299" style="zoom: 67%;" /><img src="C:\Users\13540\AppData\Roaming\Typora\typora-user-images\image-20210320100842731.png" alt="image-20210320100842731" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/gi40102499/gitImg/master/img/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AEimage-20210320100739299.png" alt="image-20210320100739299" style="zoom: 67%;" /><img src="https://raw.githubusercontent.com/gi40102499/gitImg/master/img/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AEimage-20210320100842731.png" alt="image-20210320100842731" style="zoom:50%;" />
 
 ## 2.项目截图
 
 ### 1.登陆
 
-![image-20210320101111885](C:\Users\13540\AppData\Roaming\Typora\typora-user-images\image-20210320101111885.png)
+![image-20210320101111885](https://raw.githubusercontent.com/gi40102499/gitImg/master/img/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AEimage-20210320101111885.png)
 
 ### 2.首页
 
-<img src="C:\Users\13540\AppData\Roaming\Typora\typora-user-images\image-20210320101451080.png" alt="image-20210320101451080" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/gi40102499/gitImg/master/img/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AEimage-20210320101451080.png" alt="image-20210320101451080" style="zoom:50%;" />
 
 注:未添加可视化数据图标.如需添加到
 
 ### 3.菜单设置
 
-<img src="C:\Users\13540\AppData\Roaming\Typora\typora-user-images\image-20210320101619122.png" alt="image-20210320101619122" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/gi40102499/gitImg/master/img/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AEimage-20210320101619122.png" alt="image-20210320101619122" style="zoom:50%;" />
 
 ### 4.角色管理
 
-<img src="C:\Users\13540\AppData\Roaming\Typora\typora-user-images\image-20210320101640129.png" alt="image-20210320101640129" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/gi40102499/gitImg/master/img/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AEimage-20210320101640129.png" alt="image-20210320101640129" style="zoom:50%;" />
 
-5.管理员管理
+### 5.管理员管理
 
-<img src="C:\Users\13540\AppData\Roaming\Typora\typora-user-images\image-20210320101702969.png" alt="image-20210320101702969" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/gi40102499/gitImg/master/img/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AEimage-20210320101702969.png" alt="image-20210320101702969" style="zoom:50%;" />
 
 ### 6.商品分类
 
-<img src="C:\Users\13540\AppData\Roaming\Typora\typora-user-images\image-20210320101725018.png" alt="image-20210320101725018" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/gi40102499/gitImg/master/img/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AEimage-20210320101725018.png" alt="image-20210320101725018" style="zoom:50%;" />
 
 ### 7.商品规格
 
-<img src="C:\Users\13540\AppData\Roaming\Typora\typora-user-images\image-20210320101751532.png" alt="image-20210320101751532" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/gi40102499/gitImg/master/img/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AEimage-20210320101751532.png" alt="image-20210320101751532" style="zoom:50%;" />
 
 ### 8.商品管理
 
-<img src="C:\Users\13540\AppData\Roaming\Typora\typora-user-images\image-20210320101810536.png" alt="image-20210320101810536" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/gi40102499/gitImg/master/img/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AEimage-20210320101810536.png" alt="image-20210320101810536" style="zoom:50%;" />
 
 9.会员管理
 
-<img src="C:\Users\13540\AppData\Roaming\Typora\typora-user-images\image-20210320101827338.png" alt="image-20210320101827338" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/gi40102499/gitImg/master/img/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AEimage-20210320101827338.png" alt="image-20210320101827338" style="zoom:50%;" />
 
 ### 10.轮播图管理
 
-<img src="C:\Users\13540\AppData\Roaming\Typora\typora-user-images\image-20210320101840413.png" alt="image-20210320101840413" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/gi40102499/gitImg/master/img/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AEimage-20210320101840413.png" alt="image-20210320101840413" style="zoom:50%;" />
 
 ### 11.秒杀活动
 
-<img src="C:\Users\13540\AppData\Roaming\Typora\typora-user-images\image-20210320101857976.png" alt="image-20210320101857976" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/gi40102499/gitImg/master/img/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AEimage-20210320101857976.png" alt="image-20210320101857976" style="zoom:50%;" />
