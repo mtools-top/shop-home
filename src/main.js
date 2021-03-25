@@ -9,8 +9,10 @@ Vue.config.productionTip = false
 import './assets/reset.css';
 import 'animate.css';
 import 'element-ui/lib/theme-chalk/index.css';
-// 公用属性
-Vue.prototype.$localhost = "http://127.0.0.1:3000"
+// 开发环境
+// Vue.prototype.$localhost = "http://127.0.0.1:3000"
+// 生产环境
+Vue.prototype.$localhost = ""
 // 引入饿了么ui
 import ElementUI from 'element-ui';
 Vue.use(ElementUI);

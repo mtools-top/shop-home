@@ -33,8 +33,8 @@ axios.interceptors.request.use(config => {
     return config
 });
 
-const BASE_URL = '/api';
-// const BASE_URL = '';
+// const BASE_URL = '/api';
+const BASE_URL = '';
 // 菜单列表添加请求
 export const addMenu = (data) => {
     return axios({
