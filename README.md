@@ -171,19 +171,7 @@ export const 自定义名方便调用 = (data) => {
 
 ```
 
-2.main.js
 
-```js
-// 引入vuex
-import store from './store';
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  store,
-  components: { App },
-  template: '<App/>'
-})
-```
 
 ## 3.**element-ui**[网站快速成型工具-点击跳转官网](https://element.eleme.cn/#/zh-CN)
 
