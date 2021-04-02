@@ -130,8 +130,6 @@ module.exports = {
 
 ### 代码
 
-1.store/index.js
-
 ```js
 import axios from 'axios';
 import qs from 'qs';
